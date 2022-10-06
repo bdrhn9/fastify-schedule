@@ -17,10 +17,7 @@
     "test:typescript": "tsd",
     "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\" index.js",
     "lint:everything": "npm run lint && npm run test:typescript",
-    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts"
   },
   "dependencies": {
     "fastify-plugin": "^4.0.0"
